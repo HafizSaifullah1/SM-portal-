@@ -44,12 +44,15 @@ function init() {
     document.getElementById('loginLink').style.display = "none";
     document.getElementById('loginLinkMobile').style.display = "none";
     
+    // document.getElementById('signupLink').style.display = "none";
+    // document.getElementById('sigunpLinkMobile').style.display = "hidden";
+    
     // Show logout buttons for both desktop and mobile
     document.getElementById('logoutBtn').classList.remove('hidden');
     document.getElementById('logoutBtnMobile').classList.remove('hidden');
 
     // Determine user type and show appropriate portal links
-    if (userObj.userType === "admin") {
+    if (userObj.userType === "user") {
       // Show admin portal link and hide student portal link
       document.getElementById('uploadLink').classList.remove('hidden');
       document.getElementById('uploadLinkMobile').classList.remove('hidden');
@@ -91,3 +94,8 @@ document.getElementById('menu-button').addEventListener('click', function () {
   const mobileMenu = document.getElementById('mobile-menu');
   mobileMenu.classList.toggle('hidden');
 });
+
+
+// window.check =()=>{
+
+// } 
